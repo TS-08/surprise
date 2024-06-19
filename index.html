@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Surprise</title>
+    <script>
+        // Function to check the password
+        function checkPassword() {
+            var password = prompt("Enter the password:");
+            if (password === 'thaarani@20') {
+                window.location.href = 'home.html';
+            } else {
+                alert("Access Denied");
+                window.location.href = 'index.html';
+            }
+        }
+
+        // Run the function on page load
+        window.onload = checkPassword;
+    </script>
+</head>
+<body>
+    <h1>Password Protected Page</h1>
+    <p>You must enter the correct password to access the content.</p>
+</body>
+</html>
